@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
     const [posts, setPosts] = useState([]);
@@ -42,7 +42,7 @@ export default function App() {
                 </button>
 
                 <span style={{ margin: "0 10px" }}>
-          Page {page} from {totalPages}
+          Page {page} of {totalPages}
         </span>
 
                 <button

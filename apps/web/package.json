@@ -1,14 +1,17 @@
 {
   "name": "web",
-  "version": "1.0.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
   "scripts": {
-    "dev": "echo 'Start React dev server (example Next.js)' && exit 0",
-    "build": "echo 'build front'",
-    "lint": "echo 'lint fron'"
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
   }
 }

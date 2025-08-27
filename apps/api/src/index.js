@@ -1,11 +1,13 @@
 const express = require("express");
-const fetch = require("node-fetch");
+const cors = require("cors"); // импорт cors
 const app = express();
 const port = 4000;
 
+// Разрешить все домены (для разработки)
+app.use(cors());
+
 /**
- * proxy-endpoint for mock-api
- * example: GET /posts?page=2&limit=5
+ * Прокси-эндпоинт для получения списка постов с пагинацией
  */
 app.get("/posts", async (req, res) => {
     const page = parseInt(req.query.page) || 1;
@@ -27,7 +29,8 @@ app.get("/posts", async (req, res) => {
             data: paginatedData
         });
     } catch (error) {
-        res.status(500).json({ error: "error load posts" });
+        console.error(error);
+        res.status(500).json({ error: "Ошибка загрузки постов" });
     }
 });
 

@@ -8,7 +8,9 @@ lerna-debug.log*
 
 # Dependency directories
 node_modules/
-
+.turbo/
+package-lock.json
+.idea/
 # dotenv environment variable files
 .env
 .env.*
