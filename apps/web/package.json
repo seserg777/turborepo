@@ -1,0 +1,14 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "scripts": {
+    "dev": "echo 'Start React dev server (example Next.js)' && exit 0",
+    "build": "echo 'build front'",
+    "lint": "echo 'lint fron'"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.0",
+    "utils": "*"
+  },
+  "scripts": {
+    "dev": "node src/index.js",
+    "build": "echo 'build api'",
+    "lint": "echo 'lint api'"
+  }
+}
